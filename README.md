@@ -1,113 +1,100 @@
-# sistemacolegio
-Sistema de colegio fase beta
 Estructura del Proyecto
-La estructura del proyecto es la siguiente:
-
-css
-Copiar
-Editar
 /colegio-nuevo-horizonte/
 │
 ├── index.html
 │
 ├── css/
-│   └── styles.css (Si prefieres separar los estilos en un archivo externo)
+│   └── styles.css
 │
 ├── js/
-│   └── main.js (Para funcionalidades interactivas adicionales)
+│   └── main.js
 │
 ├── img/
-│   ├── logo.png (Logo del colegio)
-│   ├── school-building.jpg (Imagen para el hero)
-│   ├── academic-icon.png (Ícono para sección académica)
-│   ├── sports-icon.png (Ícono para sección deportiva)
-│   ├── values-icon.png (Ícono para sección de valores)
-│   ├── news1.jpg (Imagen para noticia 1)
-│   ├── news2.jpg (Imagen para noticia 2)
-│   └── news3.jpg (Imagen para noticia 3)
+│   ├── logo.png
+│   ├── school-building.jpg
+│   ├── academic-icon.png
+│   ├── sports-icon.png
+│   ├── values-icon.png
+│   ├── news1.jpg
+│   ├── news2.jpg
+│   └── news3.jpg
 │
-└── fonts/ (Opcional, si decides usar fuentes personalizadas)
-    └── font files...
+└── fonts/
+    └── [font files]
 Paleta de Colores
-Se utilizó una combinación de colores solicitada con variaciones para crear un diseño armónico:
+El diseño utiliza una combinación cuidadosamente seleccionada de colores:
 
-#ff9333 (naranja): Color primario, utilizado en encabezados, botones de acción y elementos de énfasis.
+#ff9333 (naranja): Color primario utilizado en encabezados, botones de acción y elementos de énfasis.
+#83ff33 (verde lima): Color secundario utilizado en detalles visuales, acentos y gradientes.
+Colores derivados: Variaciones más claras de los colores principales para gradientes y efectos hover.
+Colores neutros: Blanco, gris claro y gris oscuro para crear contraste y balance visual.
 
-#83ff33 (verde lima): Color secundario, utilizado en detalles visuales, acentos y gradientes.
+Características Principales
+1. Diseño Responsivo
 
-Colores derivados: Variaciones más claras de estos colores para gradientes y efectos hover.
+Adaptación completa a diferentes dispositivos (móviles, tablets y escritorio)
+Uso de media queries para ajustar el layout según el tamaño de pantalla
+Implementación de grid y flexbox para estructura flexible
 
-Colores neutros: Blanco, gris claro y gris oscuro para crear contraste y balance.
+2. Componentes UI/UX
 
-Diseño y Estructura
-Encabezado (Header)
-Fondo con gradiente combinando los dos colores principales.
+Header con Navegación Fija: Acceso permanente a las secciones principales
+Hero Section: Mensaje central con llamadas a la acción destacadas
+Tarjetas de Características: Presentación visual de los beneficios del colegio
+Sección de Noticias: Información actualizada sobre eventos y actividades
+Call-to-Action (CTA): Sección destacada para proceso de admisiones
+Footer Multifuncional: Información de contacto, navegación y suscripción
 
-Navegación fija en la parte superior para acceso fácil.
+3. Elementos Técnicos
 
-Logo y menú adaptativo que se ajusta a diferentes tamaños de pantalla.
+Optimización para rendimiento y tiempo de carga
+Efectos de transición y animaciones sutiles para mejorar la experiencia
+Estructura semántica con HTML5
+Implementación de accesibilidad básica
 
-Hero Section
-Imagen de fondo grande con un overlay que asegura la legibilidad del texto.
+Instalación
 
-Llamadas a la acción con botones destacados utilizando los colores principales.
+Clona este repositorio:
 
-Mensaje centrado con la propuesta de valor del colegio.
+bashgit clone https://github.com/tu-usuario/colegio-nuevo-horizonte.git
 
-Sección de Características
-Diseño de tarjetas con transición hover suave.
+Navega al directorio del proyecto:
 
-Iconos ilustrativos en cada tarjeta con fondo gradiente.
+bashcd colegio-nuevo-horizonte
 
-Estructura de tres columnas en pantallas grandes, adaptable a una columna en dispositivos móviles.
+Abre index.html en tu navegador preferido
 
-Sección de Noticias
-Presentación de las últimas actividades del colegio de forma clara y estructurada.
+Desarrollo
+Para trabajar en el desarrollo de este proyecto:
 
-Diseño en grid para organizar el contenido visualmente.
+Modifica los estilos en css/styles.css
+Agrega funcionalidades JavaScript en js/main.js
+Reemplaza las imágenes de placeholder en la carpeta img/ con imágenes reales del colegio
 
-Fecha destacada con el color primario para facilitar la referencia temporal.
+Próximas Mejoras
 
-Call to Action (CTA)
-Sección destacada con fondo gradiente para captar la atención.
+ Implementación de menú hamburguesa para dispositivos móviles
+ Slider de imágenes para la sección de noticias
+ Galería de fotos de las instalaciones del colegio
+ Sección de testimonios de padres y estudiantes
+ Calendario de eventos integrado
+ Formulario de contacto funcional
+ Panel de administración para actualizar contenido
 
-Mensaje directo y un botón prominente de acción.
+Compatibilidad
+El sitio web ha sido probado y es compatible con:
 
-Diseño centrado para enfocar la atención del usuario.
+Google Chrome (versión 90+)
+Mozilla Firefox (versión 88+)
+Microsoft Edge (versión 90+)
+Safari (versión 14+)
 
-Footer
-Estructura organizada en cuatro columnas con información relevante.
+Contribuciones
+Las contribuciones son bienvenidas. Por favor sigue estos pasos:
 
-Enlaces rápidos a otras secciones del sitio y datos de contacto.
-
-Formulario de suscripción integrado.
-
-Iconos de redes sociales utilizando el color primario.
-
-Aspectos Técnicos
-Responsive Design
-Implementación de media queries para adaptar el diseño a diferentes dispositivos.
-
-Uso de grid y flexbox para un diseño flexible y adaptable.
-
-Tamaños de fuente relativos para asegurar escalabilidad en todos los dispositivos.
-
-Optimización de Rendimiento
-CSS en línea para evitar solicitudes HTTP adicionales (aunque se puede separar).
-
-Carga de Font Awesome desde CDN para optimizar el tiempo de carga.
-
-Interactividad
-Efectos hover en botones y enlaces.
-
-Transiciones suaves para mejorar la experiencia de usuario.
-
-Animaciones sutiles en las tarjetas de características.
-
-Accesibilidad
-Contraste adecuado entre el texto y el fondo.
-
-Estructura semántica utilizando etiquetas HTML5 apropiadas.
-
-Textos alternativos para imágenes, mejorando la accesibilidad.
-
+Haz fork del repositorio
+Crea una nueva rama (git checkout -b feature/nueva-caracteristica)
+Realiza tus cambios
+Haz commit de tus cambios (git commit -m 'Añade nueva característica')
+Haz push a la rama (git push origin feature/nueva-caracteristica)
+Abre un Pull Request
